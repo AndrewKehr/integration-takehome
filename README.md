@@ -16,21 +16,21 @@ Here is a simple Next.js app that shows how to set up Google Tag Manager (GTM) a
 
 ## How to run it
 
-npm install
-npm run dev
-visit http://localhost:3000
+- npm install
+- npm run dev
+- visit http://localhost:3000
 
-Open DevTools and go to the Console tab
-click the `Request Demo` button and you should see `Pushed request_demo_clicked event to dataLayer`
-This would also track page views across pages along the lines of `Pushed page_view event to dataLayer: {whatever}`
+- Open DevTools and go to the Console tab
+- Click the `Request Demo` button and you should see `Pushed request_demo_clicked event to dataLayer`
+- This would also track page views across pages along the lines of `Pushed page_view event to dataLayer: {whatever}`
 
 ## Additional notes
 
-The GTM container ID is a placeholder per instructions
+- The GTM container ID is a placeholder per instructions
 
-This should satisfy all requirements including the bonus for the assessment:
+- This should satisfy all requirements including the bonus for the assessment:
 
-GTM integration in Next.js
-Git version control
-Custom event tracking
-Page views tracked on route changes
+- GTM integration in Next.js
+- Git version control
+- Custom event tracking
+- Page views tracked on route changes

@@ -8,7 +8,7 @@ Here is a simple Next.js app that shows how to set up Google Tag Manager (GTM) a
 
 - A minimal Next.js app using the App Router (`app/` directory)
 - GTM script added with `<Script>` from `next/script`
-- `dataLayer` is initialized and used
+- `dataLayer` is initialized and used (correctly even, I think)
 - Custom event tracking when a button is clicked
 - route changes trigger `page_view` events in the console
 

@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GTM + Next.js Demo
 
-## Getting Started
+Here is a simple Next.js app that shows how to set up Google Tag Manager (GTM) and track basic events. The app includes a "Request Demo" button that sends a custom event to the `dataLayer`, and it also tracks page views when the route changes.
 
-First, run the development server:
+---
 
-```bash
+## What’s in the project
+
+- A minimal Next.js app using the App Router (`app/` directory)
+- GTM script added with `<Script>` from `next/script`
+- `dataLayer` is initialized and used
+- Custom event tracking when a button is clicked
+- route changes trigger `page_view` events in the console
+
+---
+
+## How to run it
+
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+visit http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open DevTools and go to the Console tab
+click the `Request Demo` button and you should see `Pushed request_demo_clicked event to dataLayer`
+This would also track page views across pages along the lines of `Pushed page_view event to dataLayer: {whatever}`
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Additional notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The GTM container ID is a placeholder per instructions
 
-## Learn More
+This should satisfy all requirements including the bonus for the assessment:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GTM integration in Next.js
+Git version control
+Custom event tracking
+Page views tracked on route changes
